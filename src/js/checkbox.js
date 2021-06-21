@@ -19,14 +19,17 @@ function onCheckboxChange (evt) {
     };
 }
 
+export {onCheckboxChange};
+
+  // 
 function setStyle() {
   if (localStorage.getItem('bodyStyle') === bodyStyle.DARK) {
     bodyRef.classList.add(bodyStyle.DARK);
-    evt.target.checked = true;
+    //evt.target.checked = true;
   } else {
     bodyRef.classList.add(bodyStyle.LIGHT);
+    //evt.target.checked = false;
   }
 }
 setStyle();
 
-export {onCheckboxChange};
